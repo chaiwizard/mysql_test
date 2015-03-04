@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 	/*
 	 * show tables in books
 	 */
-	if (mysql_query(conn, "show tables")) 
+	if (mysql_query(conn, "show tables;")) 
 	{
 		fprintf(stderr, "%s\n", mysql_error(conn));
 		exit(1);
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 
 	//insert_category("",conn);
 	
-	if(mysql_query(conn, "select * from CATEGORY")){
+	if(mysql_query(conn, "select * from CATEGORY;")){
 		printf("%s\n",mysql_error(conn));
 		exit(1);
 	}

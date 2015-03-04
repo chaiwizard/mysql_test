@@ -37,7 +37,9 @@ DESC CATEGORY;
 
 insert into CATEGORY (category_description) values('Java');
 
+select * from CATEGORY where category_description = 'Java';
 
+update CATEGORY set category_description = 'Python' where category_description = 'Go';
 
-
+delete from CATEGORY where category_description = 'Python';
 
