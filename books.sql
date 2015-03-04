@@ -43,3 +43,7 @@ update CATEGORY set category_description = 'Python' where category_description =
 
 delete from CATEGORY where category_description = 'Python';
 
+
+insert into BOOK (CATEGORY_ID,BOOK_TITLE,PUBLISHER) values (1, "Java Programming", "Apress");
+
+insert into AUTHOR (BOOK_ID,FIRST_NAME,LAST_NAME) values (1,"John","Steven");
