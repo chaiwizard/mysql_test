@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	char server[] = "localhost";
 	char user[] = "root";
 	char password[] = "123456";
-	char database[] = "books";
+	char database[] = "employee";
 
 	conn = mysql_init(NULL);
 
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	if (mysql_query(conn, "select * from CATEGORY;")) 
+	if (mysql_query(conn, "select * from employee;")) 
 	{
 		fprintf(stderr, "%s\n", mysql_error(conn));
 		exit(1);
