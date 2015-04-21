@@ -37,6 +37,7 @@ int main(int argc, char *argv[])
 
 	mysql_free_result(res);
 	mysql_close(conn);
+	mysql_library_end();//free all the memory, valgrind and vld test pass
 
 	printf("finish! \n");
 	return 0;
